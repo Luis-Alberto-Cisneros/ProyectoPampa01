@@ -1,0 +1,226 @@
+@import "mixins.less";
+@import "variables.less";
+/* estilos globales*/
+*{
+	padding: 0;
+	margin: 0;
+	.box-sizing;
+}
+html,body {
+	background:@back_white;
+	height: 100%;
+	width: 100%;
+	.sans-serif-font;
+}
+header {
+	width: 100%;	
+	position: fixed;/**/
+	height: 63px;/**/
+	top: 0px;/**/
+	background:@back_black;/**/
+	.border-bottom;/**/
+	z-index: 1000;
+}
+header img{
+	 margin: 0px 30px;
+	 .size-logo-header;
+ }
+header nav {
+	background:@back_black;
+	z-index:1000;
+	max-width: 1000px;
+	width:60%; /*m*/
+	bottom: 0px ;/*m*/
+	float: right;
+}
+header nav ul {
+	list-style:none;
+}
+header nav ul li {
+	display:inline-block;
+	position: relative;
+}
+header nav ul li:hover {
+	background:@back_black;
+}
+header nav ul li a {
+	color:@fonts_white;
+	display:block;
+	text-decoration:none;
+	padding: 20px;
+}
+header nav ul li a span {
+	margin-right:10px;
+}
+header nav ul li:hover .children {
+	display:block;
+}
+header nav ul li .children {
+	display: none;
+	background:#011826;
+	position: absolute;
+	width: 150%;
+	z-index:1000;
+}
+header nav ul li .children li {
+	display:block;
+	overflow: hidden;
+	.border-bottom-children;
+}
+header nav ul li .children li a {
+	display: block;
+}
+header nav ul li .caret {
+	position: relative;
+	top:3px;
+	margin-right:0px;
+	margin-left:10px;
+}
+/********SECTION***********/
+/***********FOOTER***************/
+footer{
+	background:@back_black;
+	bottom: 0px;
+	width: 100%;
+	height: 100px;
+	color:@fonts_white;
+}
+footer .red__social{
+	float: left;
+	margin-left: 20px;
+	margin-top: 10px;
+}
+footer .red__social p{
+	padding: 5px 0px;
+}
+footer .red__social span{
+	padding: 5px;
+}
+footer .contactos{
+	float: right;
+	text-align: right;
+	margin-right: 20px;
+	margin-top: 10px;
+}
+/******mediaqueries******************/
+@media screen and (max-width: 1050px){
+	header nav{
+		width: 80%;	
+	}
+	header nav ul li a{
+		font-size: 0.9em;
+	}
+	header img{
+		width: 8em;
+	}
+	footer{
+		.footer-bottom;
+	}
+}
+@media screen and (max-width: 950px){
+	header nav{
+		width: 75%;	
+	}
+	header img{
+		.size-logo-header(3em,8em);
+	}
+	header nav ul li a{
+		font-size: 0.6em;
+	}
+	footer{
+		.footer-bottom;
+	}
+}
+@media screen and (max-width: 800px) {
+	body {
+		padding-top:80px;
+	}
+	header img{
+		.size-logo-header(1.5em,4.8em);
+	}
+ 	.bt-menu img{
+		 box-sizing: border-box;
+	 }
+	.menu_bar {
+		display:block;
+		width:100%;
+		position: fixed;
+		top:0;
+		background:@back_black;
+	}
+	.menu_bar .bt-menu {
+		display: block;
+		padding: 20px;
+		color: @fonts_white;
+		overflow: hidden;
+		font-size: 25px;
+		font-weight: bold;
+		text-decoration: none;
+	}
+	.menu_bar span {
+		float: right;
+		font-size: 40px;
+	}
+	header nav {
+		width: 80%;
+		height: calc(100% - 80px);
+		position: fixed;
+		right:100%;
+		margin: 0;
+		overflow: scroll;
+	}
+	header nav ul li {
+		display: block;
+		.border-bottom;
+	}
+	header nav ul li a {
+		display: block;
+	}
+	header nav ul li:hover .children {
+		display: none;
+	}
+	header nav ul li .children {
+		width: 100%;
+		position: relative;
+	}
+	header nav ul li .children li a {
+		margin-left:20px;
+	}
+	header nav ul li .caret {
+		float: right;
+	}
+	/***************header otras modificaciones *************/
+	header{
+		height: 86px;
+	}
+	/************footer****************/
+	footer{
+		.footer-bottom;
+	}
+}
+@media screen and (max-width: 600px){
+	header nav {
+		width: 80%;
+		height: calc(100% - 83px);
+		position: fixed;
+		right:100%;
+		margin: 0;
+		overflow: scroll;
+	}
+	footer{
+		height: 150px;
+		bottom: 0px;
+	}
+	footer div p{
+		font-size: 0.8em;
+	}
+	footer .red__social, footer .contactos{
+		text-align: center;
+		float: none;
+	}
+	header .menu_bar a img{
+		width: 3.5em;
+		height: 1.5em;
+		 box-sizing: border-box;
+	}
+}

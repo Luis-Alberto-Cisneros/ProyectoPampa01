@@ -1,0 +1,437 @@
+* {
+	padding:0;
+	margin:0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+body {
+	background:#fff;
+	}
+.menu_bar {	
+	display:none;/*m*/
+	}
+header {
+	width: 100%;	
+	position: fixed;/**/
+	height: 64px;/**/
+	top: 0px;/**/
+	background: #000;/**/
+	border-bottom:5px solid rgba(255,0,255,.8);/**/
+	z-index: 1000;
+}
+ header img{
+	 margin: 0px 30px;
+	 height: 60px;
+	 width: 200px;
+ }
+header nav {
+	background:#000000;
+	z-index:1000;
+	max-width: 1000px;
+	width:60%; /*m*/
+	bottom: 0px ;/*m*/
+	float: right;
+}
+header nav ul {
+	list-style:none;
+}
+header nav ul li {
+	display:inline-block;
+	position: relative;
+}
+header nav ul li:hover {
+	background:#000;
+}
+header nav ul li a {
+	color:#fff;
+	display:block;
+	text-decoration:none;
+	padding: 20px;
+}
+header nav ul li a span {
+	margin-right:10px;
+}
+header nav ul li:hover .children {
+	display:block;
+}
+header nav ul li .children {
+	display: none;
+	background:#011826;
+	position: absolute;
+	width: 150%;
+	z-index:1000;
+}
+header nav ul li .children li {
+	display:block;
+	overflow: hidden;
+	border-bottom: 1px solid rgba(255,0,255,.8);
+}
+header nav ul li .children li a {
+	display: block;
+}
+header nav ul li .caret {
+	position: relative;
+	top:3px;
+	margin-left:10px;
+	margin-right:0px;
+}
+/********SECTION*************************************/
+section{
+	margin:0px 0px 0px 0px;
+	max-width: 1000;
+	height: 100vh;	
+	width: 100%;
+	position: relative;
+}
+/***index****/
+.bg__index{
+	height: 100%;
+	margin:0px 0px;
+	background-image: url("../img/vinedo1.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.bg__index  .fig__inicio {
+	margin: 0px auto;
+	text-align: center;
+	width: 80%;
+	height: 50%;
+}
+.bg__index  .fig__inicio img{
+	margin: 150px 0px 0px 0px;
+}
+/*history*/
+.history{
+	background-color: #E6E6e6;
+	text-align: center;
+}
+.photo__history{
+	width: 50%;
+	margin: 10px auto;
+}
+.history p{
+	margin: 0px 15%;
+}
+.history h2{
+	margin: 63px 0 0 0;
+}
+.our{
+	background-color: #ffffff;
+	text-align: center;
+}
+.our h2,.our h3, .cellar h2, .vineyard h2{
+	padding: 10px 0; 
+}
+.our p{
+	margin: 0px 20%;
+	text-align: justify;
+}
+.photo__our{ 	
+	width: 30%;
+	margin: 10px auto;
+}
+.cellar, .vineyard,.awards{
+	background-color: #610B21;
+	text-align: center;
+}
+.cellar h2{
+	color: #fff;
+}
+.place_cellar figure,
+.place_vineyard figure,
+.container__awards figure,
+.container_ica{
+	display: inline-block;
+}
+.photo_cellar,
+.photo_vineyard,
+.photo_awards{
+	width: 45%;
+	margin: 10px 0px;
+}
+.photo_cellar figcaption p{
+	background-color: #000000;
+	color: #fff;
+	padding: 5px 0;
+}
+.vineyard{
+	background-color:#F6CED8;
+}
+.awards{
+	background-color: #ffffff;
+}
+/*customers*/
+.ica, .palpa, .nazca, .chincha, .pisco, .lima{
+	text-align: center;
+}
+.ica{	background-color: #fff;}
+.palpa{
+	background-color: #000;
+	color: #fff;
+}
+.nazca{background-color: #FFF;}
+.chincha{background-color: #fff;}
+.pisco{background-color: #8A0808;}
+.lima{background-color: #086A87;}
+.container_ica{
+	margin-top: 5%;
+}
+.palpa p{background-color: transparent;}
+.photo_customers{
+	width: 25%;
+	height: 100px;
+	margin: 10% 10px;
+}
+.container_ica figure,
+.container_palpa figure,
+.container_nazca figure,
+.container_pisco figure,
+.container_chincha figure,
+.container_lima figure{
+	display: inline-block;
+}
+.visit{
+	background-color: #000;
+	color:#fff;
+}
+.visit a span{
+	color:#fff;
+}
+.visit h1 ,.visit a span{
+	margin: 5px 5px;
+}
+.palpa .visit h1{color: #FF00FF;}
+.nazca .visit{background-color: #61210B; color: #fff;}
+.pisco  h2{
+	background: #DBA901;
+	color: #fff;
+	width: 40%;
+	margin: 0px auto;
+	border-radius: 10px;
+}
+/*coompany*/
+.container__awards figure{
+	width: 15%;
+	height: 400px;
+}
+/*products*/
+.products{
+	height: 100%;
+	margin:0px 0px;
+	background-image: url("../img/bodega.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.container_products{
+	background-color: #fff;
+	width: 90%;
+	margin: 0 auto;
+}
+#piscos{
+	margin: 63px 0 0 0;
+}
+#piscos, #vinos{
+	background-color: #fff;
+	text-align: center;	
+}
+.title_products{
+	background-color: #000;
+	color: #fff;
+	font-size: 2em;
+	padding: 20px 0;
+}
+#piscos figure ,#vinos figure{
+	width: 30%;
+	height: 500px;
+	display: inline-block;
+	text-align: center;
+	margin: 20px 10px;
+	padding: 10px;
+}
+#piscos figure figcaption{
+	padding-bottom: 10px;
+}
+figcaption > h2{
+	font-size: 2em;
+	color: #8A0808;
+	border-bottom: 2px solid #8A0808;
+}
+
+figcaption .read a{
+	text-decoration: none;
+	display: block;
+	color:#fff;
+	background-color: #8A0808;
+	width: 100%;
+}
+
+/***********FOOTER***************/
+footer{
+	background: #000;
+	bottom: 0px;
+	width: 100%;
+	height: 100px;
+	color: #fff;
+	z-index: 1000;
+}
+.red__social{
+	float: left;
+	margin-left: 20px;
+	margin-top: 10px;
+}
+ .red__social p{
+	padding: 5px 0px;
+}
+.red__social span{
+	padding: 5px;
+}
+ .contacts{
+	float: right;
+	text-align: right;
+	margin-right: 20px;
+	margin-top: 10px;
+}
+
+/**********media queries**************/
+@media screen and (max-width: 1340px){
+	header nav{
+		width: 70%;	
+	}
+	.fig__inicio{
+		height: 60%;
+	}
+	.bg__index  .fig__inicio img{
+	margin: 80px 0px 0px 0px;
+	width: 80%;
+	}
+	
+}
+@media screen and (max-width: 1150px){
+	header nav{
+		width: 75%;	
+	}
+}
+@media screen and (max-width: 1070px){
+	header nav{
+		width: 80%;	
+	}
+	header nav ul li a{
+		font-size: 0.9em;
+	}
+	header img{
+		width: 8em;
+	}
+	/*history*/
+	.container__all{
+		margin:0px auto 0px ;
+		height: 100%;
+	}
+}
+@media screen and (max-width: 950px){
+	header nav{
+		width: 75%;	
+	}
+	header img{
+		width: 8em;
+		height: 3em;
+	}
+	header nav ul li a{
+		font-size: 0.6em;
+	}
+}
+@media screen and (max-width: 800px) {
+	header img{
+		display: hidden;
+	}
+	.menu_bar {
+		display:block;
+		width:100%;
+		position: fixed;
+		top:0;
+		background:#000000;
+		z-index: 1000;
+	}
+ 	.bt-menu img{
+	 width: 8em;
+	 height: 2.4em;
+ 	}
+	.menu_bar .bt-menu {
+		display: block;
+		padding: 20px;
+		color: #fff;
+		overflow: hidden;		
+	}
+	.menu_bar span {
+		float: right;
+		font-size: 40px;
+	}
+	header{
+		height: 86px;
+	}
+	header nav {
+		width: 80%;
+		height: calc(100% - 80px);
+		position: fixed;
+		right:100%;
+		margin: 0;
+		overflow: scroll;
+	}
+	header nav ul li ul li {
+		font-size: 1em;
+	}
+	header nav ul li {
+		font-size: 2em;
+		display: block;
+		border-bottom:3px solid rgba(255,0,255,.8);
+	}
+	header nav ul li a {
+		display: block;
+	}
+	header nav ul li:hover .children {
+		display: none;
+	}
+	header nav ul li .children {
+		width: 100%;
+		position: relative;
+	}
+	header nav ul li .caret {
+		float: right;
+	}
+	.bg__index .fig__inicio img{
+	margin: 120px 0px 0px 0px;
+	}
+	
+}
+@media screen and (max-width: 600px){
+	header nav {
+		height: calc(100% - 83px);
+	}
+	header .menu_bar a img{
+		width: 7em;
+		height: 2em;
+	}
+	/*footer*/
+	footer{
+		height: 120px;
+	}
+	.red__social, .contactos{
+		text-align: center;
+		float: none;
+		margin: 0px 0px;
+	}
+	.contacts{
+		margin-right: 0px;
+		margin-top: 0px;
+		width: 100%;
+		text-align: center;
+	}
+	.red__social p{
+		font-size: 0.8em;
+	}
+	.contacts p{
+		font-size: 0.8em;
+		right: 0px;
+	}
+	
+}
