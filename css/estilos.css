@@ -11,46 +11,45 @@ body {
 .menu_bar {	
 	display:none;/*m*/
 	}
+    .bt-menu{
+        text-decoration: none;
+    }
 header {
 	width: 100%;	
-	position: fixed;/**/
+	/*position: fixed; ---*/
 	height: 64px;/**/
 	top: 0px;/**/
 	background: #000;/**/
-	border-bottom:5px solid rgba(255,0,255,.8);/**/
+	border-bottom:3px solid rgba(138,8,75,.8);/**/
 	z-index: 1000;
 }
- header img{
-	 margin: 0px 30px;
-	 height: 60px;
-	 width: 200px;
- }
 header nav {
-	background:#000000;
+    background: #000;
+    width:100%; /*m*/
 	z-index:1000;
-	max-width: 1000px;
-	width:60%; /*m*/
+	/*max-width: 1000px;*/
 	bottom: 0px ;/*m*/
-	float: right;
+    font-size: .8em;
+   text-align: right;
 }
 header nav ul {
 	list-style:none;
 }
 header nav ul li {
 	display:inline-block;
-	position: relative;
-}
-header nav ul li:hover {
-	background:#000;
+	position: relative; 
+    text-align: left;  
 }
 header nav ul li a {
 	color:#fff;
 	display:block;
+    font-weight: bold;
 	text-decoration:none;
-	padding: 20px;
+	padding: 40px 20px 0 20px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 header nav ul li a span {
-	margin-right:10px;
+	margin-right:15px;
 }
 header nav ul li:hover .children {
 	display:block;
@@ -65,10 +64,11 @@ header nav ul li .children {
 header nav ul li .children li {
 	display:block;
 	overflow: hidden;
-	border-bottom: 1px solid rgba(255,0,255,.8);
+	border-bottom: 1px solid rgba(138,8,75,.8);
 }
 header nav ul li .children li a {
 	display: block;
+    padding: 20px 0px 20px 20px;
 }
 header nav ul li .caret {
 	position: relative;
@@ -84,37 +84,49 @@ section{
 	width: 100%;
 	position: relative;
 }
+/*company*********************/
 /***index****/
 .bg__index{
 	height: 100%;
 	margin:0px 0px;
-	background-image: url("../img/vinedo1.jpg");
+	background-image: url("../img/background/pisco.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
 }
-.bg__index  .fig__inicio {
+.fig__inicio {
 	margin: 0px auto;
 	text-align: center;
 	width: 80%;
 	height: 50%;
 }
-.bg__index  .fig__inicio img{
+.fig__inicio img{
 	margin: 150px 0px 0px 0px;
 }
 /*history*/
 .history{
-	background-color: #E6E6e6;
+    background-image: url("../img/background/madera.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	
 	text-align: center;
+    color: #fff;
+   
 }
 .photo__history{
 	width: 50%;
+    
 	margin: 10px auto;
-}
-.history p{
-	margin: 0px 15%;
+    border:5px solid #fff;
 }
 .history h2{
-	margin: 63px 0 0 0;
+    /*margin: 63px 0 0 0; ----*/
+	
+    color: #fff;
+    padding-top: 10px;
+}
+.history p{
+	margin: 10px 15%;
+    
 }
 .our{
 	background-color: #ffffff;
@@ -125,41 +137,71 @@ section{
 }
 .our p{
 	margin: 0px 20%;
-	text-align: justify;
+	text-align: center;
 }
 .photo__our{ 	
 	width: 30%;
 	margin: 10px auto;
 }
-.cellar, .vineyard,.awards{
-	background-color: #610B21;
+.cellar{
+	background-color: #000;
 	text-align: center;
+}
+.vineyard{
+    text-align: center;
+}
+.place_vineyard p, .place_cellar p,.place_our p,.place_history p{
+    width: 90%;
+    margin: 25px auto;
 }
 .cellar h2{
 	color: #fff;
 }
 .place_cellar figure,
 .place_vineyard figure,
-.container__awards figure,
+.place_awards figure,
 .container_ica{
 	display: inline-block;
 }
 .photo_cellar,
-.photo_vineyard,
-.photo_awards{
+.photo_vineyard{
 	width: 45%;
 	margin: 10px 0px;
 }
-.photo_cellar figcaption p{
-	background-color: #000000;
+.place_cellar  p{
 	color: #fff;
-	padding: 5px 0;
+	padding: 10px 0;
+    width: 90%;
 }
 .vineyard{
-	background-color:#F6CED8;
+	background-color:#Fff;
 }
 .awards{
-	background-color: #ffffff;
+	background-image: url("../img/background/madera.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+    color: #fff;
+    text-align: center;
+}
+
+#photo_award{
+    width: 30%;
+    height: 200px;
+}
+.place_awards figure img{
+    background-color: #fff;
+    border: 5px solid #fff;
+}
+.place_awards h2{
+    padding: 15px 0;
+}
+.place_awards h3{
+    width: 30%;
+    margin:0 auto;
+    border-bottom: 2px solid #fff;
+}
+.place_awards p{
+    padding:10px 0;
 }
 /*customers*/
 .ica, .palpa, .nazca, .chincha, .pisco, .lima{
@@ -183,13 +225,14 @@ section{
 	height: 100px;
 	margin: 10% 10px;
 }
-.container_ica figure,
-.container_palpa figure,
-.container_nazca figure,
-.container_pisco figure,
-.container_chincha figure,
-.container_lima figure{
+.ica figure,
+.palpa figure,
+.nazca figure,
+.pisco figure,
+.chincha figure,
+.lima figure{
 	display: inline-block;
+    height: 300px;
 }
 .visit{
 	background-color: #000;
@@ -203,6 +246,10 @@ section{
 }
 .palpa .visit h1{color: #FF00FF;}
 .nazca .visit{background-color: #61210B; color: #fff;}
+.ica h2{
+    /*margin: 100px 0 0 0;-----*/
+    
+}
 .pisco  h2{
 	background: #DBA901;
 	color: #fff;
@@ -210,117 +257,144 @@ section{
 	margin: 0px auto;
 	border-radius: 10px;
 }
+.alamo{background-color: #000;}
 /*coompany*/
-.container__awards figure{
-	width: 15%;
-	height: 400px;
-}
+
 /*products*/
 .products{
 	height: 100%;
 	margin:0px 0px;
-	background-image: url("../img/bodega.jpg");
+	background-image: url("../img/background/maderarojiza.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
 }
 .container_products{
-	background-color: #fff;
+	background-color: #000;
 	width: 90%;
 	margin: 0 auto;
 }
-#piscos{
-	margin: 63px 0 0 0;
+.container_products h1{
+    text-align: center;
+    /*margin: 63px 0 0 0;----*/
+    
+    padding: 20px 0;
+    color: #fff;
+    background-color: #8A084B;
+    border:0px solid #D8D8D8;
+    box-sizing: border-box;
 }
-#piscos, #vinos{
-	background-color: #fff;
-	text-align: center;	
+.list-product{
+    background-color: #000;
+    color: #fff;
+    height: 250px;
+     margin: 10px 0 0 0;   
 }
-.title_products{
-	background-color: #000;
-	color: #fff;
-	font-size: 2em;
-	padding: 20px 0;
+.list-product figure{
+    width: 30%;
+    height: 200px;
+    float: left;
+    text-align: center;
+    background: #fff;
+    margin-left: 20px;
+    border: 5px solid #ccc;
+}                                                                                                                                                                               
+#info-product{
+    background-color: #000;
+    width: 60%;
+    float: right;
+    margin-right: 20px;
+     height: 200px;
 }
-#piscos figure ,#vinos figure{
-	width: 30%;
-	height: 500px;
-	display: inline-block;
-	text-align: center;
-	margin: 20px 10px;
-	padding: 10px;
+.list-product figure,#info-product{
+    margin: 20px ;
 }
-#piscos figure figcaption{
-	padding-bottom: 10px;
-}
-figcaption > h2{
-	font-size: 2em;
-	color: #8A0808;
-	border-bottom: 2px solid #8A0808;
+#info-product h2{
+    color: rgba(138,8,75,1);
 }
 
-figcaption .read a{
-	text-decoration: none;
-	display: block;
-	color:#fff;
-	background-color: #8A0808;
-	width: 100%;
+#info-product p{
+    margin: 10px 0;
 }
+.line{
+    width: 100%;
+    height: 30px;
+    background-color: #000;
+}
+.line figure{
+    height: 30px;
+    width: 100%;
+    background-color: #000;
+}
+
+
+
+
+
 
 /***********FOOTER***************/
 footer{
 	background: #000;
-	bottom: 0px;
 	width: 100%;
-	height: 100px;
+	height: 155px;
 	color: #fff;
 	z-index: 1000;
+    bottom: 0px;
 }
-.red__social{
-	float: left;
-	margin-left: 20px;
-	margin-top: 10px;
+.social{
+    width: 100%;
+    height: 60px;
+    text-align: right;  
 }
- .red__social p{
+.social p{
 	padding: 5px 0px;
+     margin-right: 20px;
 }
-.red__social span{
-	padding: 5px;
+.social a{
+    text-decoration: none;
+}
+.social a span{
+	padding: 5px 0;
+    color: #fff;
+    font-size: 1.5em;
+    margin-right: 20px;
 }
  .contacts{
-	float: right;
+     width: 100%;
 	text-align: right;
-	margin-right: 20px;
-	margin-top: 10px;
 }
+.contacts  p{
+    margin-right: 20px;
+}
+.copyright{
+    width: 100%;
+    color: #848484;
+    text-align: center;
+    font-size: .7em;
+}
+.copyright p{
+    margin-top:  5px;
+}
+
 
 /**********media queries**************/
 @media screen and (max-width: 1340px){
-	header nav{
-		width: 70%;	
+    header nav{     
+       	 text-align: right;
 	}
 	.fig__inicio{
-		height: 60%;
+		height: 70%;
 	}
 	.bg__index  .fig__inicio img{
 	margin: 80px 0px 0px 0px;
 	width: 80%;
 	}
+}
+@media screen and (max-width: 1180px){
 	
 }
-@media screen and (max-width: 1150px){
-	header nav{
-		width: 75%;	
-	}
-}
 @media screen and (max-width: 1070px){
-	header nav{
-		width: 80%;	
-	}
 	header nav ul li a{
-		font-size: 0.9em;
-	}
-	header img{
-		width: 8em;
+		font-size: 1em;
 	}
 	/*history*/
 	.container__all{
@@ -328,22 +402,34 @@ footer{
 		height: 100%;
 	}
 }
-@media screen and (max-width: 950px){
-	header nav{
-		width: 75%;	
-	}
-	header img{
-		width: 8em;
-		height: 3em;
-	}
+@media screen and (max-width: 965px){
 	header nav ul li a{
-		font-size: 0.6em;
+		font-size: 0.9em;
 	}
+    footer{
+        bottom: 0px;
+        height: 155px;
+    }
+    .footer{
+        margin-bottom: 0px;
+        bottom: 0px;
+    }
+    .copyright p{
+        font-size: .7em;
+    }
+}
+@media screen and (max-width: 900px){
+
+	header nav ul li a{
+		font-size: .9em;
+	}
+   
 }
 @media screen and (max-width: 800px) {
-	header img{
-		display: hidden;
-	}
+	header nav ul li a,
+    nav ul li a ul li a{
+        font-size: 0.5em;
+    }
 	.menu_bar {
 		display:block;
 		width:100%;
@@ -352,10 +438,6 @@ footer{
 		background:#000000;
 		z-index: 1000;
 	}
- 	.bt-menu img{
-	 width: 8em;
-	 height: 2.4em;
- 	}
 	.menu_bar .bt-menu {
 		display: block;
 		padding: 20px;
@@ -371,19 +453,22 @@ footer{
 	}
 	header nav {
 		width: 80%;
-		height: calc(100% - 80px);
+		height: calc(100% - 86px);
 		position: fixed;
 		right:100%;
 		margin: 0;
 		overflow: scroll;
 	}
+    header nav ul li a {
+	padding: 20px ;
+    }
 	header nav ul li ul li {
 		font-size: 1em;
 	}
 	header nav ul li {
 		font-size: 2em;
 		display: block;
-		border-bottom:3px solid rgba(255,0,255,.8);
+		border-bottom:2px solid rgba(138,8,75,.8);
 	}
 	header nav ul li a {
 		display: block;
@@ -401,32 +486,117 @@ footer{
 	.bg__index .fig__inicio img{
 	margin: 120px 0px 0px 0px;
 	}
-	
+ 
+ .photo__history{
+	width: 90%;
+}
+.history p{
+	margin: 0px 5%;
+}
+.history h2{
+	/*margin: 86px 0 0 0;--*/
+}
+.our p{
+	margin: 0px 5%;
+}
+.photo__our{ 	
+	width: 60%;
+    height: 200px;
+}
+
+    /*customers*/
+     .photo_customers{
+         height: 200px;
+        width: 40%;
+    }
+    /*products*/
+ .list-product figure{
+    width: 30%;
+    height: 200px;
+    margin-left: 20px;
+
+}                                                                                                                                                                               
+#info-product{
+    width: 55%;
+     margin-right: 20px;
+     height: 200px;
+}
+.list-product figure,#info-product{
+    margin: 20px ;
+}
+
+#info-product p{
+    margin: 10px 0;
+}
+    /*footer*/
+    footer {
+        height: 160px;
+        bottom: 0px;
+        margin-bottom: 0;
+    }
+	.copyright p{
+        font-size: .8em;
+    }
 }
 @media screen and (max-width: 600px){
 	header nav {
 		height: calc(100% - 83px);
 	}
+    header nav ul li a,
+    nav ul li a ul li a{
+        font-size: 0.4em;
+    }
 	header .menu_bar a img{
 		width: 7em;
 		height: 2em;
 	}
+    /*customers*/
+    .photo_customers{
+        width: 40%;
+       height: 200px;   
+        }
+ /*products*/
+ .list-product{
+      height: 450px;
+      
+ }
+ .list-product figure{
+     float: none;
+    width: 60%;
+    margin: 0;
+     
+  }                                                                                                                                                                               
+#info-product{
+    width: 90%;
+    margin: 60px auto; 
+     height: 200px;
+      float: none;
+      margin: 0;
+}
+.list-product figure,#info-product{
+    margin: 20px ;
+}
+
+#info-product p{
+    margin: 10px 0;
+}
 	/*footer*/
 	footer{
-		height: 120px;
+		height: 155px;
+        bottom: 0px;
 	}
-	.red__social, .contactos{
-		text-align: center;
-		float: none;
-		margin: 0px 0px;
-	}
+   .social{
+       text-align: center;
+   }
+   
+	
 	.contacts{
 		margin-right: 0px;
 		margin-top: 0px;
 		width: 100%;
 		text-align: center;
 	}
-	.red__social p{
+	footer p{
 		font-size: 0.8em;
 	}
 	.contacts p{
@@ -434,4 +604,48 @@ footer{
 		right: 0px;
 	}
 	
+}
+@media screen and (max-width:350px){
+    /*customers*/
+    .photo_customers{
+         height: 200px;
+        width: 70%;
+    }
+    .visit h1{
+        font-size: 0.5em;
+    }
+    .visit a span{
+        font-size: 0.7em;
+    }
+    .photo_customers figcaption p{
+        font-size: 0.7em;
+    }
+    /*Company*/
+    #photo_award, #photo_licor,.photo_vineyard,
+    .photo_cellar,.photo__our,.photo__history{
+       width: 80%;
+       height: 100px;
+    }
+    /*products*/
+    #piscos figure,
+    #vinos figure{
+        width: 80%;
+        margin: 0 auto;
+    }
+    /*footer*/
+    footer{
+        bottom: 0px;
+    }
+    .social a span{
+        font-size: 1em;
+    }
+    .contacts p{
+       margin-top: 5px;
+        font-size: 0.7em;
+    }
+  
+    .copyright p{
+        margin-top: 3px;
+        font-size: 0.7em;
+    }
 }

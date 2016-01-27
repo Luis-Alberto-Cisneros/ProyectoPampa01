@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
 	<meta charset="UTF-8">
-	<title>Bodega Pampas de Ica</title>
+	<title>Pampas de Ica</title>
 	<link rel="icon" href="img/icon.ico">
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<link rel="stylesheet" href="css/estilos.css">
@@ -16,9 +16,8 @@
 <body>
 <header>
 		<div class="menu_bar">
-			<a href="#" class="bt-menu"><span class="icon-menu"></span><img src="img/Logo_blanco.png" height="80px" width="100px"></a>
+			<a href="#" class="bt-menu"><span class="icon-menu"></span></a>
 		</div>
- 		<img src="img/Logo_blanco.png" width="200px" height="60px" alt="">
 		<nav>
 			<ul>
 				<li><a href="index.html"><span class="icon-home"></span>INICIO</a></li>
@@ -55,7 +54,7 @@
 		</nav>
 	</header>	
 	<section class="customers">
-		<div class="ica">
+		<div class="ica"  id="ica">
 			<h2>CLIENTES REGION ICA</h2>
 			<figure class="photo_customers">
 				<img src="img/customers/Huacafuckingchina.jpg" width="100%" height="100%" alt="">
@@ -71,7 +70,20 @@
 				</figcaption>
 			</figure>
 			<figure class="photo_customers">
-				<img src="img/customers/Huacafuckingchina.jpg" width="100%" height="100%" alt="">
+				<img  src="img/customers/blackmonkey.png" width="100%" height="100%" alt="">
+				<figcaption>
+					<p>Direccion: xxxxxxxxxxxxxxxxxxxxxx</p>
+					<p>Telefonos: xxxxx/xxxxxxx</p>
+					<div class="visit">
+						<h1>VISITENOS EN</h1>
+						<a href=""><span class="icon-facebook3"></span></a>
+						<a href=""><span class="icon-twitter3"></span></a>
+						<a href=""><span class="icon-google-plus3"></span></a>
+					</div>
+				</figcaption>
+			</figure>
+            <figure class="photo_customers">
+				<img class="alamo" src="img/customers/Alamo.png" width="100%" height="100%" alt="">
 				<figcaption>
 					<p>Direccion: xxxxxxxxxxxxxxxxxxxxxx</p>
 					<p>Telefonos: xxxxx/xxxxxxx</p>
@@ -84,7 +96,7 @@
 				</figcaption>
 			</figure>
 			<figure class="photo_customers">
-				<img src="img/customers/Huacafuckingchina.jpg" width="100%" height="100%" alt="">
+				<img src="img/customers/garchetti.jpg" width="100%" height="100%" alt="">
 				<figcaption>
 					<p>Direccion: xxxxxxxxxxxxxxxxxxxxxx</p>
 					<p>Telefonos: xxxxx/xxxxxxx</p>
@@ -97,7 +109,7 @@
 				</figcaption>
 			</figure>
 			<figure class="photo_customers">
-				<img src="img/customers/Huacafuckingchina.jpg" width="100%" height="100%" alt="">
+				<img src="img/customers/malibu_blanco.jpg" width="100%" height="100%" alt="">
 				<figcaption>
 					<p>Direccion: xxxxxxxxxxxxxxxxxxxxxx</p>
 					<p>Telefonos: xxxxx/xxxxxxx</p>
@@ -110,7 +122,7 @@
 				</figcaption>
 			</figure>
 			<figure class="photo_customers">
-				<img src="img/customers/Huacafuckingchina.jpg" width="100%" height="100%" alt="">
+				<img src="img/customers/miski.png" width="100%" height="100%" alt="">
 				<figcaption>
 					<p>Direccion: xxxxxxxxxxxxxxxxxxxxxx</p>
 					<p>Telefonos: xxxxx/xxxxxxx</p>
@@ -123,7 +135,7 @@
 				</figcaption>
 			</figure>
 			<figure class="photo_customers">
-				<img src="img/customers/Huacafuckingchina.jpg" width="100%" height="100%" alt="">
+				<img src="img/customers/the80restobar.png" width="100%" height="100%" alt="">
 				<figcaption>
 					<p>Direccion: xxxxxxxxxxxxxxxxxxxxxx</p>
 					<p>Telefonos: xxxxx/xxxxxxx</p>
@@ -136,8 +148,8 @@
 				</figcaption>
 			</figure>
 		</div>
-		<div class="palpa">
-			<h2>CLIENTES REGION PALPA</h2>
+		<div class="palpa" id="palpa">
+			<h2 >CLIENTES REGION PALPA</h2>
 			<figure class="photo_customers">
 				<img src="img/customers/Alamo.png" width="100%" height="100%" alt="">
 				<figcaption>
@@ -165,7 +177,7 @@
 				</figcaption>
 			</figure>
 		</div>
-		<div class="nazca">
+		<div class="nazca" id="nazca">
 			<h2>CLIENTES REGION NAZCA</h2>
 			<figure class="photo_customers">
 				<img src="img/customers/miski.png" width="100%" height="100%" alt="">
@@ -207,7 +219,7 @@
 				</figcaption>
 			</figure>
 		</div>
-		<div class="pisco">
+		<div class="pisco" id="pisco">
 			<h2>CLIENTES REGION PISCO</h2>
 			<figure class="photo_customers">
 				<img src="img/customers/the80restobar.png" width="100%" height="100%" alt="">
@@ -236,7 +248,7 @@
 				</figcaption>
 			</figure>
 		</div>
-		<div class="chincha">
+		<div class="chincha" id="chincha">
 			<h2>CLIENTES REGION CHINCHA</h2>
 			<figure class="photo_customers">
 				<img src="img/customers/malibu.jpg" width="100%" height="100%" alt="">
@@ -278,7 +290,7 @@
 				</figcaption>
 			</figure>
 		</div>
-		<div class="lima">
+		<div class="lima" id="lima">
 			<h2>CLIENTES REGION LIMA</h2>
 			<figure class="photo_customers">
 				<img src="img/customers/garchetti.jpg" width="100%" height="100%" alt="">
@@ -308,17 +320,20 @@
 			</figure>
 		</div>
 	<footer>
-		<div class="red__social">
-			<p>Siguenos</p>
-			<span class="icon-facebook3"></span>
-			<span class="icon-twitter3"></span>
-			<span class="icon-google-plus3"></span>
-		</div>
-		<div class="contacts">
+		 <div class="social" id="social">
+                <p>Siguenos</p>
+                <a href="https://www.facebook.com/bodegalapampa" target="_blank"><span class="icon-facebook3"></span></a>
+                <a href=""><span class="icon-twitter3"></span></a>
+                <a href=""><span class="icon-google-plus3"></span></a>
+        </div>
+		<div class="contacts" >
 			<p>956619496 / #736270</p>
 			<p>vitivinicolalapampa@outlook.com.pe</p>
 			<p>Tienda principal: Av. San Martín Nº 2131 - Ica</p>
 			<p>Bodega: Distrito de Los Aquijes (Espalda del Estadio del Rosario)</p>
 		</div>
+       <div class="copyright">
+          <p>COPYRIGHT KANCKFRO CODE</p>
+       </div>        
 	</footer>
 </body>

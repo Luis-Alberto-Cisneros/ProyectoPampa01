@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
 	<meta charset="UTF-8">
-	<title>Bodega Pampas de Ica</title>
+	<title>Pampas de Ica</title>
 	<link rel="icon" href="img/icon.ico">
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<link rel="stylesheet" href="css/estilos.css">
@@ -13,26 +13,30 @@
 	<script src="js/jgestures.js"></script>
 	<script src="js/jgestures.min.js"></script>
 	
-	
-
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="js/query.js"></script>
+    
+    <link rel="stylesheet" href="css/fancybox.css">
+    <link rel="stylesheet" href="css/fancybox/jquery.fancybox-buttons.css">
+    <link rel="stylesheet" href="css/fancybox/jquery.fancybox-thumbs.css">
+    <link rel="stylesheet" href="css/fancybox/jquery.fancybox.css">
 </head>
 <body>
 <header>
 		<div class="menu_bar">
-			<a href="#" class="bt-menu"><span class="icon-menu"></span><img src="img/Logo_blanco.png" height="80px" width="100px"></a>
+			<a href="#" class="bt-menu"><span class="icon-menu"></span></a>
 		</div>
- 		<img src="img/Logo_blanco.png" width="200px" height="60px" alt="">
 		<nav>
 			<ul>
 				<li><a href="index.html"><span class="icon-home"></span>INICIO</a></li>
 				<li  class="submenu">
 					<a href="#"><span class="icon-user-tie"></span>NOSOTROS<span class="caret icon-circle-down"></span></a>
 					<ul class="children">
-						<li><a href="Company.html#historia">HISTORIA</a></li>
-						<li><a href="company.html#somos">QUIENES SOMOS</a></li>
-						<li><a href="company.html#bodega">BODEGA</a></li>
-						<li><a href="company.html#vinedo">VIÑEDOS</a></li>
-						<li><a href="company.html#premios">PREMIOS</span></a></li>
+						<li><a href="company.html#history">HISTORIA</a></li>
+						<li><a href="company.html#our">QUIENES SOMOS</a></li>
+						<li><a href="company.html#cellar">BODEGA</a></li>
+						<li><a href="company.html#vineyard">VIÑEDOS</a></li>
+						<li><a href="company.html#awards">PREMIOS</span></a></li>
 					</ul>
 				</li>
 				<li class="submenu">
@@ -59,158 +63,290 @@
 	</header>	
 	<section class="products" >
 		<div class="container_products">
-			<div id="piscos">
-				<h1 class="title_products">Nuestros Piscos</h1>
-				<figure>
-					<img  src="img/products/piscos/Acholado500ml.png"   height="100%" alt="">
-					<figcaption>
-						<h2>Acholado 500 ml</h2>
-						<p>Valor s/. 00.00</p>
-						<div class="read ">
-							<a href="" >leer masa </a>
-						</div>
-					</figcaption>
-					
-				</figure>
-				<figure>
-					<img src="img/products/piscos/Torontel500ml.png"  height="100%" alt="">
-					<figcaption>
-						<h2>Torontel 500 ml</h2>
-						<p>Valor s/. 00.00</p>
-						<div class="read">
-							<a href="">leer masa </a>
-						</div>
-					</figcaption>
-				</figure>
-				<figure>
-					<img src="img/products/piscos/Albilla500ml.png"  height="100%" alt="">
-					<figcaption>
-						<h2>Albilla 500 ml</h2>
-						<p>Valor s/. 00.00</p>
-						<div class="read">
-							<a href="">leer masa </a>
-						</div>
-					</figcaption>
-				</figure>
-				<figure>
-					<img src="img/products/piscos/Italia500ml.png" height="100%" alt="">
-					<figcaption>
-						<h2>Italia 500 ml</h2>
-						<p>Valor s/. 00.00</p>
-						<div class="read">
-							<a href="">leer masa </a>
-						</div>
-					</figcaption>
-				</figure>
-				<figure>
-					<img src="img/products/piscos/Moscatel500ml.png"  height="100%" alt="">
-					<figcaption>
-						<h2>Moscatel 500 ml</h2>
-						<p>Valor s/. 00.00</p>
-						<div class="read">
-							<a href="">leer masa </a>
-						</div>
-					</figcaption>
-				</figure>
-				<figure>
-					<img src="img/products/piscos/Quebranta500ml.png"  height="100%" alt="">
-					<figcaption>
-						<h2>Quebranta 500 ml</h2>
-						<p>Valor s/. 00.00</p>
-						<div class="read">
-							<a href="">leer masa </a>
-						</div>
-					</figcaption>
-				</figure>
-				<figure>
-					<img src="img/products/piscos/Quebranta750ml.png"  height="100%" alt="">
-					<figcaption>
-						<h2>Quebranta 750 ml</h2>
-						<p>Valor s/. 00.00</p>
-						<div class="read">
-							<a href="">leer masa </a>
-						</div>
-					</figcaption>
-				</figure>
-				<figure>
-					<img src="img/products/piscos/Acholado750ml.png"  height="100%" alt="">
-					<figcaption>
-						<h2>Acholado 750 ml</h2>
-						<p>Valor s/. 00.00</p>
-						<div class="read">
-							<a href="">leer masa </a>
-						</div>
-					</figcaption>
-				</figure>
-				<figure>
-					<img src="img/products/piscos/Torontel750ml.png"   height="100%" alt="">
-					<figcaption>
-						<h2>Torontel 750 ml</h2>
-						<p>Valor s/. 00.00</p>
-						<div class="read">
-							<a href="">leer masa </a>
-						</div>
-					</figcaption>
-				</figure>
-			</div>
-			<div id="vinos">
-				<h1 class="title_products">Nuestros Vinos</h1>
-				<figure>
-					<img src="img/products/vinos/Amoreperfecto.png"   height="100%" alt="">
-					<figcaption>
-						<h2>Amore Perfecto</h2>
-						<p>Valor s/. 00.00</p>
-						<div class="read">
-							<a href="">leer masa </a>
-						</div>
-					</figcaption>
-				</figure>
-				<figure>
-					<img src="img/products/vinos/Blanco.png"   height="100%" alt="">
-					<figcaption>
-						<h2>Blanco</h2>
-						<p>Valor s/. 00.00</p>
-						<div class="read">
-							<a href="">leer masa </a>
-						</div>
-					</figcaption>
-				</figure>
-				<figure>
-					<img src="img/products/vinos/Borgona.png"   height="100%" alt="">
-					<figcaption>
-						<h2>Borgoña</h2>
-						<p>Valor s/. 00.00</p>
-						<div class="read">
-							<a href="">leer masa </a>
-						</div>
-					</figcaption>
-				</figure>
-				<figure>
-					<img src="img/products/vinos/Rose.png"   height="100%" alt="">
-					<figcaption>
-						<h2>Rosé</h2>
-						<p>Valor s/. 00.00</p>
-						<div class="read">
-							<a href="">leer masa </a>
-						</div>
-					</figcaption>
-				</figure>
-			</div>
+			
+              <h1 id="piscos">Nuestros Piscos</h1>
+              <div class="list-product uno">
+                   <figure>
+                        <a class="fancybox" rel="group" href="img/products/piscos/Acholado500ml.png" title="Vino Amore Perfecto!">
+                            <img src="img/products/piscos/Acholado500ml.png" width="" height="100%" alt="">
+                        </a>
+                   </figure>
+                    <div id="info-product">
+                        <h2>Acholado 500 ml</h2>
+                        <hr>
+                        <h4>750ml / 11% VOL </h4>
+                        <h5>(Vino dulce) </h5>
+                        <p>Este vino dulce es una variedad tradicional y representativa del valle de Ica. Conocido por su exquisito sabor y efectos afrodisiacos en parejas. Elaborado a base de jugos de uvas, al cual se le ha añadido pisco puro torontel, lo que permite una sinergia de aromas cítricos y frutales.  En boca se deja sentir sabores a frutas secas como pecanas y pasas rubias.</p>
+                    </div>
+              </div>
+              <div class="line">
+                  <figure>
+                      <img src="img/separador.png" width="100%" height="100%" alt="">
+                  </figure>
+              </div>
+              <div class="list-product uno">
+                   <figure>
+                        <a class="fancybox" rel="group" href="img/products/piscos/Albilla500ml.png" title="Vino Amore Perfecto!">
+                            <img src="img/products/piscos/Albilla500ml.png" width="" height="100%" alt="">
+                        </a>
+                   </figure>
+                    <div id="info-product">
+                        <h2>Albilla 500 ml</h2>
+                        <hr>
+                        <h4>750ml / 11% VOL </h4>
+                        <h5>(Vino dulce) </h5>
+                        <p>Este vino dulce es una variedad tradicional y representativa del valle de Ica. Conocido por su exquisito sabor y efectos afrodisiacos en parejas. Elaborado a base de jugos de uvas, al cual se le ha añadido pisco puro torontel, lo que permite una sinergia de aromas cítricos y frutales.  En boca se deja sentir sabores a frutas secas como pecanas y pasas rubias.</p>
+                    </div>
+              </div>
+              <div class="line">
+                  <figure>
+                      <img src="img/separador.png" width="100%" height="100%" alt="">
+                  </figure>
+              </div>
+              <div class="list-product uno">
+                   <figure>
+                        <a class="fancybox" rel="group" href="img/products/piscos/Italia500ml.png" title="Vino Amore Perfecto!">
+                            <img src="img/products/piscos/Italia500ml.png" width="" height="100%" alt="">
+                        </a>
+                   </figure>
+                    <div id="info-product">
+                        <h2>Italia 500 ml</h2>
+                        <hr>
+                        <h4>750ml / 11% VOL </h4>
+                        <h5>(Vino dulce) </h5>
+                        <p>Este vino dulce es una variedad tradicional y representativa del valle de Ica. Conocido por su exquisito sabor y efectos afrodisiacos en parejas. Elaborado a base de jugos de uvas, al cual se le ha añadido pisco puro torontel, lo que permite una sinergia de aromas cítricos y frutales.  En boca se deja sentir sabores a frutas secas como pecanas y pasas rubias.</p>
+                    </div>
+              </div>
+              <div class="line">
+                  <figure>
+                      <img src="img/separador.png" width="100%" height="100%" alt="">
+                  </figure>
+              </div>
+              <div class="list-product uno">
+                   <figure>
+                        <a class="fancybox" rel="group" href="img/products/piscos/Moscatel500ml.png" title="Vino Amore Perfecto!">
+                            <img src="img/products/piscos/Moscatel500ml.png" width="" height="100%" alt="">
+                        </a>
+                   </figure>
+                    <div id="info-product">
+                        <h2>Moscatel 500 ml</h2>
+                        <hr>
+                        <h4>750ml / 11% VOL </h4>
+                        <h5>(Vino dulce) </h5>
+                        <p>Este vino dulce es una variedad tradicional y representativa del valle de Ica. Conocido por su exquisito sabor y efectos afrodisiacos en parejas. Elaborado a base de jugos de uvas, al cual se le ha añadido pisco puro torontel, lo que permite una sinergia de aromas cítricos y frutales.  En boca se deja sentir sabores a frutas secas como pecanas y pasas rubias.</p>
+                    </div>
+              </div>
+              <div class="line">
+                  <figure>
+                      <img src="img/separador.png" width="100%" height="100%" alt="">
+                  </figure>
+              </div>
+              <div class="list-product uno">
+                   <figure>
+                        <a class="fancybox" rel="group" href="img/products/piscos/Quebranta500ml.png" title="Vino Amore Perfecto!">
+                            <img src="img/products/piscos/Quebranta500ml.png" width="" height="100%" alt="">
+                        </a>
+                   </figure>
+                    <div id="info-product">
+                        <h2>Quebranta 500 ml</h2>
+                        <hr>
+                        <h4>750ml / 11% VOL </h4>
+                        <h5>(Vino dulce) </h5>
+                        <p>Este vino dulce es una variedad tradicional y representativa del valle de Ica. Conocido por su exquisito sabor y efectos afrodisiacos en parejas. Elaborado a base de jugos de uvas, al cual se le ha añadido pisco puro torontel, lo que permite una sinergia de aromas cítricos y frutales.  En boca se deja sentir sabores a frutas secas como pecanas y pasas rubias.</p>
+                    </div>
+              </div>
+              <div class="line">
+                  <figure>
+                      <img src="img/separador.png" width="100%" height="100%" alt="">
+                  </figure>
+              </div>
+              <div class="list-product uno">
+                   <figure>
+                        <a class="fancybox" rel="group" href="img/products/piscos/Torontel500ml.png" title="Vino Amore Perfecto!">
+                            <img src="img/products/piscos/Torontel500ml.png" width="" height="100%" alt="">
+                        </a>
+                   </figure>
+                    <div id="info-product">
+                        <h2>Torontel 500 ml</h2>
+                        <hr>
+                        <h4>750ml / 11% VOL </h4>
+                        <h5>(Vino dulce) </h5>
+                        <p>Este vino dulce es una variedad tradicional y representativa del valle de Ica. Conocido por su exquisito sabor y efectos afrodisiacos en parejas. Elaborado a base de jugos de uvas, al cual se le ha añadido pisco puro torontel, lo que permite una sinergia de aromas cítricos y frutales.  En boca se deja sentir sabores a frutas secas como pecanas y pasas rubias.</p>
+                    </div>
+              </div>
+              <div class="line">
+                  <figure>
+                      <img src="img/separador.png" width="100%" height="100%" alt="">
+                  </figure>
+              </div>
+              <div class="list-product uno">
+                   <figure>
+                        <a class="fancybox" rel="group" href="img/products/piscos/Acholado750ml.png" title="Vino Amore Perfecto!">
+                            <img src="img/products/piscos/Acholado750ml.png" width="" height="100%" alt="">
+                        </a>
+                   </figure>
+                    <div id="info-product">
+                        <h2>Acholado 750 ml</h2>
+                        <hr>
+                        <h4>750ml / 11% VOL </h4>
+                        <h5>(Vino dulce) </h5>
+                        <p>Este vino dulce es una variedad tradicional y representativa del valle de Ica. Conocido por su exquisito sabor y efectos afrodisiacos en parejas. Elaborado a base de jugos de uvas, al cual se le ha añadido pisco puro torontel, lo que permite una sinergia de aromas cítricos y frutales.  En boca se deja sentir sabores a frutas secas como pecanas y pasas rubias.</p>
+                    </div>
+              </div>
+              <div class="line">
+                  <figure>
+                      <img src="img/separador.png" width="100%" height="100%" alt="">
+                  </figure>
+              </div>
+              <div class="list-product uno">
+                   <figure>
+                        <a class="fancybox" rel="group" href="img/products/piscos/Quebranta750ml.png" title="Vino Amore Perfecto!">
+                            <img src="img/products/piscos/Quebranta750ml.png" width="" height="100%" alt="">
+                        </a>
+                   </figure>
+                    <div id="info-product">
+                        <h2>Quebranta 750 ml</h2>
+                        <hr>
+                        <h4>750ml / 11% VOL </h4>
+                        <h5>(Vino dulce) </h5>
+                        <p>Este vino dulce es una variedad tradicional y representativa del valle de Ica. Conocido por su exquisito sabor y efectos afrodisiacos en parejas. Elaborado a base de jugos de uvas, al cual se le ha añadido pisco puro torontel, lo que permite una sinergia de aromas cítricos y frutales.  En boca se deja sentir sabores a frutas secas como pecanas y pasas rubias.</p>
+                    </div>
+              </div>
+              <div class="line">
+                  <figure>
+                      <img src="img/separador.png" width="100%" height="100%" alt="">
+                  </figure>
+              </div>
+              <div class="list-product uno">
+                   <figure>
+                        <a class="fancybox" rel="group" href="img/products/piscos/Torontel750ml.png" title="Vino Amore Perfecto!">
+                            <img src="img/products/piscos/Torontel750ml.png" width="" height="100%" alt="">
+                        </a>
+                   </figure>
+                    <div id="info-product">
+                        <h2>Torontel 750 ml</h2>
+                        <hr>
+                        <h4>750ml / 11% VOL </h4>
+                        <h5>(Vino dulce) </h5>
+                        <p>Este vino dulce es una variedad tradicional y representativa del valle de Ica. Conocido por su exquisito sabor y efectos afrodisiacos en parejas. Elaborado a base de jugos de uvas, al cual se le ha añadido pisco puro torontel, lo que permite una sinergia de aromas cítricos y frutales.  En boca se deja sentir sabores a frutas secas como pecanas y pasas rubias.</p>
+                    </div>
+              </div>
+               <div class="line">
+                  <figure>
+                      <img src="img/separador.png" width="100%" height="100%" alt="">
+                  </figure>
+              </div>     
+              <h1 id="vinos">Nuestros vinos</h1>
+              <div class="list-product uno">
+                   <figure>
+                        <a class="fancybox" rel="group" href="img/products/vinos/Amoreperfecto.png" title="Vino Amore Perfecto!">
+                            <img src="img/products/vinos/Amoreperfecto.png" width="" height="100%" alt="">
+                        </a>
+                   </figure>
+                    <div id="info-product">
+                        <h2>Vino amore perfecto</h2>
+                        <hr>
+                        <h4>750ml / 11% VOL </h4>
+                        <h5>(dulce) </h5>
+                        <p>Este vino dulce es una variedad tradicional y representativa del valle de Ica. Conocido por su exquisito sabor y efectos afrodisiacos en parejas. Elaborado a base de jugos de uvas, al cual se le ha añadido pisco puro torontel, lo que permite una sinergia de aromas cítricos y frutales.  En boca se deja sentir sabores a frutas secas como pecanas y pasas rubias.</p>
+                    </div>
+              </div>
+              <div class="line">
+                  <figure>
+                      <img src="img/separador.png" width="100%" height="100%" alt="">
+                  </figure>
+              </div>
+              <div class="list-product uno">
+                   <figure>
+                        <a class="fancybox" rel="group" href="img/products/vinos/Blanco.png" title="Vino Amore Perfecto!">
+                            <img src="img/products/vinos/Blanco.png" width="" height="100%" alt="">
+                        </a>
+                   </figure>
+                    <div id="info-product">
+                        <h2>Vino Blanco </h2>
+                        <hr>
+                        <h4>750ml / 11% VOL </h4>
+                        <h5>(Semiseco) </h5>
+                        <p>Elaborado con uvas borgoña, cosechadas a mano de nuestros viñedos en Santiago- Ica, bajo el método de fermentación parcial del mosto. Su bajo grado alcohólico, agradable dulzura natural con sabores a fresas y frambuesas con una ligera acidez y aromas a frutas rojas, hacen de este vino una experiencia exquisita.</p>
+                    </div>
+              </div>
+              <div class="line">
+                  <figure>
+                      <img src="img/separador.png" width="100%" height="100%" alt="">
+                  </figure>
+              </div>
+              <div class="list-product uno">
+                   <figure>
+                        <a class="fancybox" rel="group" href="img/products/vinos/Borgona.png" title="Vino Amore Perfecto!">
+                            <img src="img/products/vinos/Borgona.png" width="" height="100%" alt="">
+                        </a>
+                   </figure>
+                    <div id="info-product">
+                        <h2>Vino Borgoña</h2>
+                        <hr>
+                        <h4>750ml / 11% VOL </h4>
+                        <h5>(Semiseco) </h5>
+                        <p>Elaborado con uvas borgoña, cosechadas a mano de nuestros viñedos en Santiago- Ica, bajo el método de fermentación parcial del mosto. Su bajo grado alcohólico, agradable dulzura natural con sabores a fresas y frambuesas con una ligera acidez y aromas a frutas rojas, hacen de este vino una experiencia exquisita.</p>
+                    </div>
+              </div>
+              <div class="line">
+                  <figure>
+                      <img src="img/separador.png" width="100%" height="100%" alt="">
+                  </figure>
+              </div>
+              <div class="list-product uno">
+                   <figure>
+                        <a class="fancybox" rel="group" href="img/products/vinos/Rose.png" title="Vino Amore Perfecto!">
+                            <img src="img/products/vinos/Rose.png" width="" height="100%" alt="">
+                        </a>
+                   </figure>
+                    <div id="info-product">
+                        <h2>Vino Rosé de Ica</h2>
+                        <hr>
+                        <h4>750ml / 11% VOL </h4>
+                        <h5>(Semiseco) </h5>
+                        <p>Este vino dulce es una variedad tradicional y representativa del valle de Ica. Conocido por su exquisito sabor y efectos afrodisiacos en parejas. Elaborado a base de jugos de uvas, al cual se le ha añadido pisco puro torontel, lo que permite una sinergia de aromas cítricos y frutales.  En boca se deja sentir sabores a frutas secas como pecanas y pasas rubias.</p>
+                    </div>
+              </div>  
+              <div class="line">
+                  <figure>
+                      <img src="img/separador.png" width="100%" height="100%" alt="">
+                  </figure>
+              </div>       
+           </div>
 		</div>
 	</section>
-	
 	<footer>
-		<div class="red__social">
-			<p>Siguenos</p>
-			<span class="icon-facebook3"></span>
-			<span class="icon-twitter3"></span>
-			<span class="icon-google-plus3"></span>
-		</div>
-		<div class="contacts">
+		 <div class="social" id="social">
+                <p>Siguenos</p>
+                <a href="https://www.facebook.com/bodegalapampa" target="_blank"><span class="icon-facebook3"></span></a>
+                <a href=""><span class="icon-twitter3"></span></a>
+                <a href=""><span class="icon-google-plus3"></span></a>
+        </div>
+		<div class="contacts" >
 			<p>956619496 / #736270</p>
 			<p>vitivinicolalapampa@outlook.com.pe</p>
 			<p>Tienda principal: Av. San Martín Nº 2131 - Ica</p>
 			<p>Bodega: Distrito de Los Aquijes (Espalda del Estadio del Rosario)</p>
 		</div>
+       <div class="copyright">
+          <p>COPYRIGHT KANCKFRO CODE</p>
+       </div>        
 	</footer>
+    
+    <!-- Grab Google CDN's jQuery, fall back to local if offline -->
+  		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+  		<script>window.jQuery || document.write('<script src="js/libs/jquery-1.7.1.min.js"><\/script>')</script>    
+	<!-- FancyBox -->
+		<script src="js/fancybox/jquery.fancybox.js"></script>
+		<script src="js/fancybox/jquery.fancybox-buttons.js"></script>
+		<script src="js/fancybox/jquery.fancybox-thumbs.js"></script>
+        <script src="js/fancybox/jquery.easing-1.3.pack.js"></script>
+		<script src="js/fancybox/jquery.mousewheel-3.0.6.pack.js"></script>
+        
+        <script type="text/javascript">
+			$(document).ready(function() {
+			$(".fancybox").fancybox();
+			});
+		</script>
 </body>
